@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <header>Graphical<br> Password<br> Authentication<br> System</header>
+        <link rel="stylesheet" href="regstyle.css">
+            <div class="wrapper">
+				<h2>Registration Form</h2>
+				<form name= "signup" onsubmit= "return validate()" action="signup.php" method="post">
+					<div class="input-field">
+						<input type="text" name="realname" required="" >
+						<label>Full Name</label>
+					</div>
+					<div class="input-field">
+						<input type="text" required="" name="collname">
+						<label >College</label>
+					</div>
+					<div class="input-field">
+						<input type="text"  required="" name="phone" onBlur="test3();">
+						<label>Phone number</label>
+					</div>
+					<div class="input-field">
+						<input type="email"  required="" name="email">
+						<label>Email</label>
+					</div>
+					<div class="input-field">
+						<input type="text"  required="" name="name" onBlur="test();">
+						<label>Username(Ten Characters Max)</label>
+					</div>
+					<div class="input-field">
+						<input type="password"  required="" name="password">
+						<label>password</label>
+					</div>
+					<div class="input-field">
+						<input type="password" required="" name="repassword" onBlur="test2();">
+						<label>confirm password</label>
+					</div>
+					<input type="submit" value="Signup" class="btn" name="submit">
+				</form>
+			</div>
+        <script src="formvalidation.js"></script>
+    </body>
+</html>

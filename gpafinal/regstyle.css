@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600&display=swap');
+@font-face {
+    src:url(fonts/bigjohnpro-bold.otf);
+    font-family:bigjohn;
+}
+@font-face {
+    src:url(fonts/bigjohnpro-regular.otf);
+    font-family:bigjohnreg;
+}
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(90deg,#EC563B 50%,#fff 50% );
+    height:100vh;
+    width:100%;
+}
+header{
+    text-align:left;
+    left:0%;
+    top:20%;
+   position: absolute;
+   padding: 20px; 
+   /* font-size:50px; */
+   text-transform: uppercase;
+   color:#1B2932;
+   font-family: 'bigjohn';
+   font-size: 60px;
+
+}
+
+/* wrapper class for entire form design */
+.wrapper{
+    left:45%;
+    top:0%;
+   position: absolute;
+   /* transform: translate(-50%,-50%); */
+   background: #fff;
+   box-sizing: border-box;
+   box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
+   width: 600px;
+   padding: 20px; 
+}
+.wrapper h2{
+    font-family: 'bigjohnreg';
+    font-weight:400;
+    font-size: 50px;
+    color: #2D2C32;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+/* .wrapper h2::before{
+    margin:0;
+    position: absolute;
+    content:'';
+    top:93px;
+    left:-1; 
+    margin-left: 10px;
+    height:5px;
+    width:185px;
+    background-color: #EC563B;
+}
+.wrapper h2::after{
+    margin:0;
+    position: absolute;
+    content:'';
+    top:93px;
+    right:-1;
+    margin-right:10px;
+    height:5px;
+    width:185px;
+    background-color: #EC563B;
+} */
+.input-field{
+    position: relative;
+    margin-top: 40px;
+    width:100%;
+    box-sizing: border-box;
+}
+.input-field input{
+    width:100%;
+    border:none;
+    border-bottom: 2px solid #666;
+    padding:5px;
+    background:transparent;
+    outline:none;
+    box-sizing: border-box;
+    color:#2D2C32;
+
+}
+.input-field label{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:5px 0;
+    color:#2D2C32;
+    font-size:15px;
+    text-transform:uppercase ;
+    font-family:'bigjohnreg' ;
+    pointer-events: none;
+    /* transition: 0.5s;     */
+}
+.input-field input:hover{
+    border-bottom:2px solid #EC563B;
+    transition: 0.5s;
+}
+.input-field input:focus+label,
+.input-field input:valid+label{
+    top:-25px;
+    transition: 0.5s;
+    font-size: 9px;
+}
+.btn{
+    border-radius:15px;
+    padding:10px;
+    margin-top:20px;
+    font-size: 20px;
+    background-color:#1B2932 ;
+    float: right;
+
+    text-align: center;
+    color:white;
+    border:2px solid #EC563B;
+    cursor: pointer;
+    font-family: 'bigjohnreg';
+}
+.btn:hover{
+    border:2px solid#666;
+    background-color: #EC563B;
+    color:white;
+}
+p{
+    font-family: 'bigjohn';
+    text-transform: uppercase;
+    font-size: 15px;
+    float:right;
+    text-align: center;
+    margin-top:20%;
+    padding:10px;
+    margin-right:25%;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+   color:#666; 
+}
+.dets{
+    top:60%;
+    margin-left:5%;
+    position: absolute;
+    font-family:bigjohnreg;
+    text-transform:uppercase;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
+   width: 400px;
+   height:200px;
+   padding: 20px;
+   background:#fff;
+}
+.wel{
+    font-family:bigjohn;
+    text-transform:uppercase;
+    font-size:20px;
+}
+.img{
+    margin-left:5%;
+    top:10%;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+    width:300px;
+}
+.edit-dets1{
+    margin-left:55%;
+    top:60%;
+    height:100px;
+
+}
